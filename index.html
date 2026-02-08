@@ -1,167 +1,181 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>יוסי שכטר - רואה חשבון | מומחה לעסקים קטנים ובינוניים</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Assistant', sans-serif; }
-        /* הגדרת צבעים מותאמים למצב לילה */
-        .dark { background-color: #0f172a; color: #e2e8f0; }
-        .dark .bg-white { background-color: #1e293b !important; }
-        .dark .text-slate-900 { color: #f1f5f9 !important; }
-        .dark .text-slate-600 { color: #94a3b8 !important; }
-        .dark .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2) !important; }
-    </style>
-    <script>
-        // סקריפט לניהול מצב לילה (Dark Mode)
-        tailwind.config = {
-            darkMode: 'class',
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>יוסי שכטר – רואה חשבון | YOSSI SCHECTER C.P.A. (ISR)</title>
+  <meta name="description" content="יוסי שכטר – רואה חשבון. מעל 20 שנות ניסיון בליווי פיננסי מקצועי לעסקים קטנים ובינוניים עם זמינות גבוהה ושירות אישי." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              text: '#1a1a1a',
+              navy: '#002b49',
+              muted: '#6c8eae',
+              light: '#ffffff',
+              darkBg: '#0b1420',
+              darkCard: '#111c2b'
+            }
+          }
         }
-    </script>
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Assistant', sans-serif; }
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-900 transition-colors duration-300">
-
-    <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/90 dark:bg-slate-900/90 shadow-sm border-b border-slate-100 dark:border-slate-800">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center">
-                <div>
-                    <h1 class="text-2xl font-extrabold text-[#002b49] dark:text-blue-400 leading-none">יוסי שכטר</h1>
-                    <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">רואה חשבון (CPA)</span>
-                </div>
-            </div>
-            <button onclick="document.documentElement.classList.toggle('dark')" class="p-3 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-slate-200 transition flex items-center justify-center">
-                <span class="dark:hidden">🌙</span>
-                <span class="hidden dark:inline">☀️</span>
-            </button>
+<body class="bg-gradient-to-b from-slate-100 via-white to-slate-100 text-brand-text dark:from-[#07101b] dark:via-brand-darkBg dark:to-[#0d1a2b] dark:text-slate-100 transition-colors duration-300">
+  <header class="sticky top-0 z-50 border-b border-slate-300/70 dark:border-slate-800 bg-white/85 dark:bg-brand-darkBg/90 backdrop-blur-xl">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="flex items-end gap-1" aria-hidden="true">
+          <span class="w-2.5 h-8 rounded bg-brand-text dark:bg-slate-300"></span>
+          <span class="w-2.5 h-10 rounded bg-brand-text dark:bg-slate-300"></span>
+          <span class="w-2.5 h-12 rounded bg-brand-navy"></span>
+          <span class="w-2.5 h-5 rounded bg-brand-muted"></span>
         </div>
-    </nav>
-
-    <header class="relative overflow-hidden bg-gradient-to-br from-[#002b49] to-[#004e8c] dark:from-slate-900 dark:to-[#002b49] text-white py-28 px-6">
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-                השקט הנפשי שלך <br/> מתחיל בניהול פיננסי מדויק.
-            </h2>
-            <p class="text-xl md:text-2xl mb-10 text-blue-100 max-w-2xl mx-auto font-light">
-                מעל 20 שנות ניסיון בליווי אישי לעסקים קטנים ובינוניים.
-                <br class="hidden md:block"> זמינות גבוהה, מקצועיות חסרת פשרות, ותוצאות.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://wa.me/972544521689" class="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.463 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                    לשיחת וואטסאפ
-                </a>
-                <a href="tel:0544521689" class="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 px-8 py-4 rounded-xl font-bold text-lg transition backdrop-blur-sm">
-                    📞 חייגו עכשיו
-                </a>
-            </div>
+        <div class="leading-tight">
+          <p class="text-xl font-extrabold text-brand-text dark:text-slate-100">יוסי שכטר</p>
+          <p class="text-sm text-slate-600 dark:text-slate-300">YOSSI SCHECTER C.P.A. (ISR)</p>
         </div>
-        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-    </header>
+      </div>
 
-    <section class="py-20 px-6 max-w-6xl mx-auto -mt-16 relative z-20">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 border border-slate-100 dark:border-slate-700/50">
-                <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/50 rounded-2xl flex items-center justify-center mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold mb-4 text-[#002b49] dark:text-white">דוחות שנתיים</h3>
-                <p class="text-slate-600 dark:text-slate-300 leading-relaxed">הגשה מדויקת, מקצועית ובזמן לרשויות המס. טיפול מלא בבירוקרטיה כדי שאתם תוכלו להתמקד בעסק.</p>
-            </div>
-            <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 border border-slate-100 dark:border-slate-700/50">
-                 <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/50 rounded-2xl flex items-center justify-center mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold mb-4 text-[#002b49] dark:text-white">תכנון מס חכם</h3>
-                <p class="text-slate-600 dark:text-slate-300 leading-relaxed">ניצול מקסימלי של הטבות מס וחוקים קיימים. אופטימיזציה שתחסוך לכם כסף רב בסוף השנה.</p>
-            </div>
-            <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 border border-slate-100 dark:border-slate-700/50">
-                 <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/50 rounded-2xl flex items-center justify-center mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold mb-4 text-[#002b49] dark:text-white">ייעוץ עסקי לצמיחה</h3>
-                <p class="text-slate-600 dark:text-slate-300 leading-relaxed">יותר מרואה חשבון - שותף לדרך. ניתוח פיננסי וליווי צמוד להגדלת הרווחיות בעסק.</p>
-            </div>
+      <nav class="hidden md:flex items-center gap-7 text-base font-semibold">
+        <a href="#services" class="hover:text-brand-navy dark:hover:text-brand-muted transition">שירותים</a>
+        <a href="#about" class="hover:text-brand-navy dark:hover:text-brand-muted transition">אודות</a>
+        <a href="#contact" class="hover:text-brand-navy dark:hover:text-brand-muted transition">יצירת קשר</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <button id="theme-toggle" class="w-11 h-11 rounded-full border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="החלפת מצב תצוגה">
+          <span class="dark:hidden">🌙</span><span class="hidden dark:inline">☀️</span>
+        </button>
+        <a href="client-area.html" class="px-4 py-2.5 border-2 border-brand-navy text-brand-navy dark:border-brand-muted dark:text-brand-muted rounded-lg font-bold hover:bg-brand-navy hover:text-white dark:hover:bg-brand-muted dark:hover:text-brand-darkBg transition">כניסת לקוחות</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative overflow-hidden">
+    <div class="absolute -top-24 left-[-120px] w-96 h-96 bg-brand-muted/30 dark:bg-brand-muted/10 blur-3xl rounded-full pointer-events-none"></div>
+    <div class="absolute top-80 right-[-140px] w-[28rem] h-[28rem] bg-brand-navy/20 dark:bg-brand-navy/20 blur-3xl rounded-full pointer-events-none"></div>
+
+    <section class="relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-16 pb-20 md:pt-24 md:pb-20 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="inline-flex bg-brand-muted/20 dark:bg-brand-muted/20 text-brand-navy dark:text-brand-muted px-3 py-1 rounded-full font-bold mb-4">רואה חשבון לעסקים קטנים ובינוניים</p>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-brand-text dark:text-white">דיוק פיננסי. צמיחה עסקית.</h1>
+          <p class="mt-6 text-lg text-slate-700 dark:text-slate-300 leading-relaxed">מעל 20 שנות ניסיון בליווי פיננסי מקצועי בירושלים והסביבה. שירות אישי, זמינות גבוהה ותכנון חכם שמאפשר לעסק שלך להתקדם בביטחון.</p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="#contact" class="px-6 py-3 rounded-lg bg-brand-navy text-white font-bold hover:opacity-90 transition text-center">תיאום שיחת היכרות</a>
+            <a href="tel:0544521689" class="px-6 py-3 rounded-lg border border-brand-muted text-brand-navy dark:text-brand-muted font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition text-center">054-452-1689</a>
+          </div>
         </div>
+
+        <div class="bg-gradient-to-br from-white to-slate-100 dark:from-brand-darkCard dark:to-[#17283e] rounded-2xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-2xl">
+          <h2 class="text-2xl font-bold mb-6">שירות מקצועי עם יחס אישי</h2>
+          <ul class="space-y-4 text-slate-700 dark:text-slate-300">
+            <li class="flex gap-3"><span class="text-brand-navy dark:text-brand-muted">✔</span><span>התמחות בעסקים קטנים ובינוניים</span></li>
+            <li class="flex gap-3"><span class="text-brand-navy dark:text-brand-muted">✔</span><span>ליווי שוטף, זמינות גבוהה ושקיפות מלאה</span></li>
+            <li class="flex gap-3"><span class="text-brand-navy dark:text-brand-muted">✔</span><span>פתרונות מס מותאמים לעסק ולבעלי המניות</span></li>
+            <li class="flex gap-3"><span class="text-brand-navy dark:text-brand-muted">✔</span><span>משרד: נחל לכיש 21, בית שמש</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 pb-8 md:pb-12">
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="rounded-2xl bg-brand-navy text-white p-5 shadow-lg">
+            <p class="text-3xl font-extrabold">20+</p>
+            <p class="text-slate-100">שנות ניסיון בשירות עסקים</p>
+          </div>
+          <div class="rounded-2xl bg-brand-muted/25 dark:bg-brand-muted/20 p-5 border border-brand-muted/40">
+            <p class="text-3xl font-extrabold text-brand-navy dark:text-brand-muted">100%</p>
+            <p class="text-slate-700 dark:text-slate-300">שירות אישי וזמינות גבוהה</p>
+          </div>
+          <div class="rounded-2xl bg-slate-900 text-white dark:bg-slate-700 p-5 shadow-lg">
+            <p class="text-3xl font-extrabold">SMB</p>
+            <p class="text-slate-100">מיקוד מלא בעסקים קטנים ובינוניים</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="py-20 px-6 bg-slate-100 dark:bg-slate-900/50">
-        <div class="max-w-4xl mx-auto text-center">
-            <h3 class="text-3xl font-bold mb-8 text-[#002b49] dark:text-white">למה לבחור במשרד שלנו?</h3>
-            <div class="bg-white dark:bg-slate-800 p-10 rounded-3xl shadow-sm inline-block border border-slate-200 dark:border-slate-700">
-                <div class="text-6xl font-extrabold text-blue-600 dark:text-blue-400 mb-2">20+</div>
-                <div class="text-2xl font-bold text-slate-800 dark:text-white mb-4">שנות ניסיון מוכח</div>
-                <p class="text-slate-600 dark:text-slate-300 max-w-md mx-auto">
-                    שילוב של ידע מקצועי עמוק עם יחס אישי וזמינות גבוהה. אנחנו מבינים את האתגרים של עסקים קטנים ובינוניים בישראל.
-                </p>
-            </div>
-        </div>
+    <section id="services" class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-4">השירותים שלנו</h2>
+      <p class="text-center text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-12">מעטפת חשבונאית ופיננסית מלאה, מותאמת לבעלי עסקים שרוצים שקט נפשי וצמיחה.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="p-7 rounded-2xl border border-slate-200 dark:border-slate-800 bg-gradient-to-b from-white to-slate-100 dark:from-brand-darkCard dark:to-[#152437] shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-brand-muted/20 text-brand-navy dark:text-brand-muted grid place-items-center mb-4 text-xl">₪</div>
+          <h3 class="text-xl font-bold mb-3">תכנון מס חכם</h3>
+          <p class="text-slate-600 dark:text-slate-300">בניית אסטרטגיית מס לצמצום חשיפה, תכנון קדימה ושיפור תזרים לאורך השנה.</p>
+        </article>
+        <article class="p-7 rounded-2xl border border-slate-200 dark:border-slate-800 bg-gradient-to-b from-white to-slate-100 dark:from-brand-darkCard dark:to-[#152437] shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-brand-muted/20 text-brand-navy dark:text-brand-muted grid place-items-center mb-4 text-xl">📄</div>
+          <h3 class="text-xl font-bold mb-3">דוחות שנתיים והצהרות</h3>
+          <p class="text-slate-600 dark:text-slate-300">הכנה והגשה מדויקת של דוחות שנתיים, התאמות מס ובקרה שוטפת על הנתונים.</p>
+        </article>
+        <article class="p-7 rounded-2xl border border-slate-200 dark:border-slate-800 bg-gradient-to-b from-white to-slate-100 dark:from-brand-darkCard dark:to-[#152437] shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-brand-muted/20 text-brand-navy dark:text-brand-muted grid place-items-center mb-4 text-xl">📈</div>
+          <h3 class="text-xl font-bold mb-3">ייעוץ עסקי לצמיחה</h3>
+          <p class="text-slate-600 dark:text-slate-300">ניתוח עומק של רווחיות, תמחור וניהול פיננסי לקבלת החלטות עסקיות טובות יותר.</p>
+        </article>
+      </div>
     </section>
 
-    <footer class="bg-[#002b49] dark:bg-slate-950 text-white py-16 px-6">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-12 text-center md:text-right">
-            <div>
-                <h4 class="text-xl font-bold mb-6 text-blue-200">יוסי שכטר - רואה חשבון</h4>
-                <p class="text-blue-100/80 leading-relaxed">משרד בוטיק לראיית חשבון, המתמחה במתן מעטפת פיננסית מלאה לעסקים קטנים ובינוניים.</p>
-            </div>
-            <div>
-                <h4 class="text-xl font-bold mb-6 text-blue-200">פרטי קשר</h4>
-                 <ul class="space-y-4">
-                    <li class="flex items-center justify-center md:justify-start gap-3">
-                        <span>📍</span> נחל לכיש 21, בית שמש
-                    </li>
-                    <li class="flex items-center justify-center md:justify-start gap-3">
-                        <span>📞</span> <a href="tel:0544521689" class="hover:text-blue-300 transition">054-452-1689</a>
-                    </li>
-                    <li class="flex items-center justify-center md:justify-start gap-3">
-                        <span>✉️</span> <a href="mailto:yosssi.cpa@gmail.com" class="hover:text-blue-300 transition">yosssi.cpa@gmail.com</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                 <h4 class="text-xl font-bold mb-6 text-blue-200">שעות פעילות</h4>
-                 <p class="text-blue-100/80">א'-ה': 09:00 - 18:00</p>
-                 <p class="text-blue-100/80">ו': בתיאום מראש</p>
-                 <div class="mt-6">
-                     <a href="https://wa.me/972544521689" class="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-bold">
-                         זמין גם בוואטסאפ >
-                     </a>
-                 </div>
-            </div>
+    <section id="about" class="py-16 md:py-20">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="rounded-3xl bg-gradient-to-l from-brand-navy to-[#14486c] dark:from-[#132235] dark:to-[#0f3a5f] text-white p-8 md:p-12 shadow-2xl">
+          <h2 class="text-3xl md:text-4xl font-extrabold mb-6">יוסי שכטר – רואה חשבון</h2>
+          <p class="text-lg leading-relaxed text-slate-100">המשרד מעניק ליווי מקיף לעסקים קטנים ובינוניים, עם דגש על מקצועיות, אמינות ושירות אישי בגובה העיניים. אנחנו מאמינים בזמינות גבוהה ובקשר רציף כדי לתת לכל לקוח פתרון מדויק שמייצר ערך אמיתי.</p>
         </div>
-        <div class="mt-16 pt-8 border-t border-blue-900/50 text-center text-blue-200/60 text-sm">
-            <p>© 2026 YOSSI SCHECTER C.P.A. (ISR). כל הזכויות שמורות.</p>
-        </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <a href="https://wa.me/972544521689" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition transform hover:scale-110 flex items-center gap-3 group">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.463 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-        <span class="font-bold hidden md:block">דברו איתי בוואטסאפ</span>
-    </a>
+  <footer id="contact" class="bg-brand-navy text-white py-14 border-t border-brand-muted/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="font-extrabold text-xl mb-4">פרטי קשר</h3>
+        <p>יוסי שכטר – רואה חשבון</p>
+        <p>נחל לכיש 21, בית שמש</p>
+      </div>
+      <div>
+        <h3 class="font-extrabold text-xl mb-4">יצירת קשר ישירה</h3>
+        <p><a class="hover:underline" href="tel:0544521689">054-452-1689</a></p>
+        <p><a class="hover:underline" href="mailto:yosssi.cpa@gmail.com">yosssi.cpa@gmail.com</a></p>
+      </div>
+      <div>
+        <h3 class="font-extrabold text-xl mb-4">גישה מהירה</h3>
+        <p><a class="hover:underline" href="client-area.html">אזור לקוחות</a></p>
+        <p class="text-slate-200 mt-4">© 2026 YOSSI SCHECTER C.P.A. (ISR)</p>
+      </div>
+    </div>
+  </footer>
 
-    <style>
-        @keyframes blob {
-            0% { transform: translate(0px, 0px) scale(1); }
-            33% { transform: translate(30px, -50px) scale(1.1); }
-            66% { transform: translate(-20px, 20px) scale(0.9); }
-            100% { transform: translate(0px, 0px) scale(1); }
-        }
-        .animate-blob {
-            animation: blob 7s infinite;
-        }
-        .animation-delay-2000 {
-            animation-delay: 2s;
-        }
-    </style>
+  <a href="https://wa.me/972544521689" target="_blank" rel="noopener noreferrer" class="fixed bottom-5 left-5 sm:bottom-6 sm:left-6 z-50 inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg transition">
+    <span class="text-xl">💬</span>
+    <span class="font-bold text-sm sm:text-base">זמין לכם גם בוואטסאפ</span>
+  </a>
 
+  <script>
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'dark') root.classList.add('dark');
+
+    themeToggle.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
 </body>
 </html>

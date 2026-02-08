@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>אזור לקוחות | יוסי שכטר – רואה חשבון</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              text: '#1a1a1a',
+              navy: '#002b49',
+              muted: '#6c8eae',
+              darkBg: '#0b1420',
+              darkCard: '#111c2b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Assistant', sans-serif; }</style>
+</head>
+<body class="bg-gradient-to-b from-slate-100 via-white to-slate-100 dark:from-[#07101b] dark:via-brand-darkBg dark:to-[#0d1a2b] text-brand-text dark:text-slate-100 transition-colors duration-300 min-h-screen">
+  <header class="border-b border-slate-300/70 dark:border-slate-800 bg-white/85 dark:bg-brand-darkBg/90 backdrop-blur-xl">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-bold text-brand-navy dark:text-brand-muted">חזרה לאתר הראשי</a>
+      <button id="theme-toggle" class="w-11 h-11 rounded-full border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="החלפת מצב תצוגה">
+        <span class="dark:hidden">🌙</span><span class="hidden dark:inline">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-10 md:py-14 grid lg:grid-cols-5 gap-8 relative">
+    <div class="absolute -top-10 left-0 w-60 h-60 bg-brand-muted/20 dark:bg-brand-muted/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <section class="lg:col-span-2 bg-gradient-to-b from-white to-slate-100 dark:from-brand-darkCard dark:to-[#17283e] rounded-2xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-lg">
+      <h1 class="text-2xl font-extrabold mb-2">אזור לקוחות מאובטח</h1>
+      <p class="text-slate-600 dark:text-slate-300 mb-6">כניסה מהירה לצפייה במסמכים, סטטוס משימות ועדכונים מהנהלת החשבונות.</p>
+
+      <form class="space-y-4" onsubmit="event.preventDefault(); document.getElementById('login-msg').classList.remove('hidden');">
+        <div>
+          <label for="email" class="block mb-1 font-semibold">אימייל</label>
+          <input id="email" type="email" required class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-900 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-muted" placeholder="name@business.co.il" />
+        </div>
+        <div>
+          <label for="password" class="block mb-1 font-semibold">סיסמה</label>
+          <input id="password" type="password" required class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-900 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-muted" placeholder="••••••••" />
+        </div>
+        <button type="submit" class="w-full bg-brand-navy text-white font-bold py-3 rounded-lg hover:opacity-90 transition">כניסה למערכת</button>
+      </form>
+      <p id="login-msg" class="hidden mt-4 text-sm text-green-600 dark:text-green-400">התחברות לדוגמה בוצעה בהצלחה (Placeholder).</p>
+    </section>
+
+    <section class="lg:col-span-3 bg-gradient-to-b from-white to-slate-100 dark:from-brand-darkCard dark:to-[#17283e] rounded-2xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-lg">
+      <h2 class="text-2xl font-extrabold mb-6">לוח בקרה (תצוגה לדוגמה)</h2>
+      <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
+        <article class="rounded-xl border border-slate-200 dark:border-slate-700 p-4 bg-white/70 dark:bg-slate-900/30">
+          <p class="text-sm text-slate-500 dark:text-slate-400">מסמכים ממתינים</p>
+          <p class="text-3xl font-extrabold mt-2 text-brand-navy dark:text-brand-muted">4</p>
+        </article>
+        <article class="rounded-xl border border-slate-200 dark:border-slate-700 p-4 bg-white/70 dark:bg-slate-900/30">
+          <p class="text-sm text-slate-500 dark:text-slate-400">דוחות אחרונים</p>
+          <p class="text-3xl font-extrabold mt-2 text-brand-navy dark:text-brand-muted">12</p>
+        </article>
+        <article class="rounded-xl border border-slate-200 dark:border-slate-700 p-4 bg-white/70 dark:bg-slate-900/30">
+          <p class="text-sm text-slate-500 dark:text-slate-400">פניות פתוחות</p>
+          <p class="text-3xl font-extrabold mt-2 text-brand-navy dark:text-brand-muted">1</p>
+        </article>
+      </div>
+      <div class="mt-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-700 p-6 text-slate-600 dark:text-slate-300 bg-brand-muted/10 dark:bg-brand-muted/5">
+        כאן יוצג בהמשך מידע אישי ללקוח: מסמכים, תזכורות, חיובים ומשימות פתוחות.
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'dark') root.classList.add('dark');
+
+    themeToggle.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
